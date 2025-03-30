@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/backbtn"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/edit"
+            android:id="@+id/editBtn"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/delete"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="냉장"
+                        android:padding="10dp"
+                        android:textColor="#485E6C"
+                        android:background="@drawable/buttonshape4"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/coolback" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="128dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:background="@drawable/buttonclick2"
+                        android:text="냉장"
+                        android:textStyle="bold"
+
+                        android:id="@+id/cool"/>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="냉동"
+                        android:padding="10dp"
+                        android:textColor="#485E6C"
+                        android:background="@drawable/buttonshape4"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/iceback"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="128dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:background="@drawable/buttonclick"
+                        android:text="냉동"
+                        android:textStyle="bold"
+                        android:id="@+id/ice"/>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="실외"
+                        android:padding="10dp"
+                        android:textColor="#485E6C"
+                        android:background="@drawable/buttonshape4"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/outback"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="128dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:background="@drawable/buttonclick3"
+                        android:text="실외"
+                        android:textStyle="bold"
+                        android:id="@+id/out"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttonshape"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="37dp"/>
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/addimage"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/imageText"
+                    android:layout_marginTop="105dp"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="이름"
+                    android:textColor="#333"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/redcircle" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/objectname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/edittext"
+                android:hint="물건의 이름"
+                android:paddingLeft="20dp"
+                android:paddingTop="14dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:text="수량"
+                android:textColor="#333"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/btn_minus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/minus"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="minusNum"/>
+                <TextView
+                    android:id="@+id/objectcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:text="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_plus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/circleplus"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="plusNum"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="메모"
+                    android:textSize="20dp"
+                    android:textColor="#333"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="물건의 메모"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:id="@+id/objectmemo"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유통 기한"
+                android:textSize="20dp"
+                android:textColor="#333"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/objectdeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="0dp"
+                android:textSize="13dp"
+                android:text="날짜 선택"
+                android:textColor="@color/white"
+                android:background="@drawable/buttonshape"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

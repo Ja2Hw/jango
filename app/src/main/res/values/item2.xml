@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_array2">
+        <item>최신 순으로 정렬</item>
+        <item>넣은 순으로 정렬</item>
+        <item>이름 순으로 정렬</item>
+        <item>이름 역순으로 정렬</item>
+    </string-array>
+</resources>
